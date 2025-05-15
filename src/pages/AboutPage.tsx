@@ -18,7 +18,7 @@ const AboutPage = () => {
           >
             <h1 className="text-3xl md:text-4xl font-bold mb-4">Over Ons</h1>
             <p className="text-gray-300 max-w-2xl mx-auto">
-              Leer meer over Studio Design, onze visie en ons team van getalenteerde interieur ontwerpers en bouwers.
+              Leer meer over Kempas, onze visie en ons vakmanschap op het gebied van interieur, montage en betimmering.
             </p>
           </motion.div>
 
@@ -31,20 +31,18 @@ const AboutPage = () => {
               className="space-y-6"
             >
               <h2 className="text-3xl font-bold">
-                Onze <span className="text-orange">Visie</span>
+                Over <span className="text-orange">Kempas</span>
               </h2>
               <p className="text-gray-300">
-                Bij Studio Design geloven we dat een goed ontworpen ruimte meer is dan alleen esthetiek - het moet functioneel zijn, 
-                uw persoonlijkheid weerspiegelen en positief bijdragen aan uw dagelijks leven.
+                Kempas interieur, montage en betimmering verzorgt grote en kleine projecten voor woningen en bedrijven. 
+                Planmatig, gestructureerd en altijd met oog voor detail: Kempas werkt graag voor de bovengemiddeld kritische opdrachtgever.
               </p>
               <p className="text-gray-300">
-                Opgericht in 2010, hebben we ons ontwikkeld tot een team van gepassioneerde ontwerpers en vakmannen die ieder project 
-                benaderen met creativiteit, precisie en een diepgaand begrip van de behoeften van onze klanten.
+                "Quality means doing it right when no one is looking." – Henry Ford
               </p>
               <p className="text-gray-300">
-                Onze filosofie is eenvoudig: luisteren naar uw wensen, uw levensstijl begrijpen en een ruimte creëren die perfect bij u 
-                past. Of het nu gaat om een woonkamer die uw persoonlijkheid weerspiegelt, een functioneel kantoor dat productiviteit stimuleert, 
-                of een horecagelegenheid die klanten aantrekt - we streven naar perfectie in elk detail.
+                Bij Kempas geloven we dat elk detail telt. Of het nu gaat om een kleine renovatie of een compleet interieurproject, 
+                wij brengen dezelfde toewijding en vakmanschap naar elk project dat we ondernemen.
               </p>
             </motion.div>
 
@@ -57,13 +55,54 @@ const AboutPage = () => {
               <div className="aspect-square relative rounded-lg overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
-                  alt="Studio Design team"
+                  alt="Kempas interieur team"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               </div>
             </motion.div>
           </div>
+
+          {/* Erik van den Brand Section */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="mb-20"
+          >
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="order-2 lg:order-1">
+                <div className="aspect-[3/4] rounded-lg overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80"
+                    alt="Erik van den Brand"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              
+              <div className="order-1 lg:order-2">
+                <h2 className="text-3xl font-bold mb-6">
+                  <span className="text-orange">Erik van den Brand</span>
+                </h2>
+                <p className="text-gray-300 mb-4">
+                  "Mijn naam is Erik van den Brand. Als oprichter en eigenaar van Kempas werk ik sinds 2005 aan uiteenlopende 
+                  interieur- en renovatieprojecten voor zowel particuliere als zakelijke klanten."
+                </p>
+                <p className="text-gray-300 mb-4">
+                  Met meer dan 15 jaar ervaring in de branche, breng ik een schat aan kennis en expertise naar elk project. 
+                  Mijn passie voor vakmanschap en oog voor detail zorgen ervoor dat elk project dat we ondernemen voldoet aan 
+                  de hoogste standaarden van kwaliteit.
+                </p>
+                <p className="text-gray-300">
+                  Bij Kempas geloof ik in een persoonlijke aanpak. Ik werk nauw samen met onze klanten om hun visie te 
+                  begrijpen en deze om te zetten in een interieur dat niet alleen esthetisch mooi is, maar ook perfect 
+                  functioneert voor hun specifieke behoeften.
+                </p>
+              </div>
+            </div>
+          </motion.div>
 
           {/* Stats Section */}
           <motion.div
@@ -77,7 +116,7 @@ const AboutPage = () => {
               { value: "150+", label: "Afgeronde Projecten" },
               { value: "15+", label: "Jaar Ervaring" },
               { value: "45+", label: "Tevreden Klanten" },
-              { value: "12", label: "Design Awards" }
+              { value: "100%", label: "Kwaliteitsgarantie" }
             ].map((stat, index) => (
               <div 
                 key={index} 
@@ -89,73 +128,7 @@ const AboutPage = () => {
             ))}
           </motion.div>
 
-          {/* Team Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="mb-20"
-          >
-            <h2 className="text-3xl font-bold mb-12 text-center">
-              Ons <span className="text-orange">Team</span>
-            </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {[
-                {
-                  name: "Emma de Vries",
-                  role: "Hoofd Ontwerper",
-                  image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80",
-                  bio: "Met meer dan 10 jaar ervaring leidt Emma ons ontwerpteam met visie en creativiteit."
-                },
-                {
-                  name: "Thomas Berg",
-                  role: "Interieurarchitect",
-                  image: "https://images.unsplash.com/photo-1600486913747-55e5470d6f40?auto=format&fit=crop&w=400&q=80",
-                  bio: "Thomas specialiseert zich in het creëren van innovatieve en functionele ruimtes."
-                },
-                {
-                  name: "Sophie Jansen",
-                  role: "Project Manager",
-                  image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
-                  bio: "Sophie zorgt ervoor dat elk project soepel verloopt, van concept tot realisatie."
-                },
-                {
-                  name: "Lars Bakker",
-                  role: "Hoofdaannemer",
-                  image: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=400&q=80",
-                  bio: "Met zijn expertise zorgt Lars voor de hoogste kwaliteit in de uitvoering van onze ontwerpen."
-                }
-              ].map((member, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-dark-lighter rounded-lg overflow-hidden hover-scale"
-                >
-                  <div className="aspect-[3/4] relative">
-                    <img 
-                      src={member.image}
-                      alt={member.name}
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-6">
-                      <p className="text-white">{member.bio}</p>
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold">{member.name}</h3>
-                    <p className="text-orange">{member.role}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-
-          {/* Timeline Section */}
+          {/* Partnership Section */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -164,7 +137,48 @@ const AboutPage = () => {
             className="mb-20"
           >
             <h2 className="text-3xl font-bold mb-12 text-center">
-              Onze <span className="text-orange">Geschiedenis</span>
+              <span className="text-orange">Partnerschap</span>
+            </h2>
+            
+            <div className="bg-dark-lighter p-8 rounded-lg mb-12">
+              <p className="text-gray-300 mb-4">
+                Wanneer een project of een opdrachtgever erom vraagt, werkt Kempas graag samen met partners en (interieur)architecten. 
+                In de loop der jaren is er een sterk netwerk opgebouwd met mensen die hun vak uitstekend verstaan.
+              </p>
+              <p className="text-gray-300">
+                Deze samenwerkingen stellen ons in staat om complete oplossingen te bieden voor zelfs de meest complexe projecten. 
+                Van ontwerp tot realisatie, we werken samen met de beste professionals in de industrie om ervoor te zorgen dat 
+                elk aspect van uw project wordt uitgevoerd met de grootste zorg en precisie.
+              </p>
+            </div>
+            
+            <h2 className="text-3xl font-bold mb-12 text-center">
+              <span className="text-orange">Materialen en Leveranciers</span>
+            </h2>
+            
+            <div className="bg-dark-lighter p-8 rounded-lg">
+              <p className="text-gray-300 mb-4">
+                Kempas werkt nauw samen met goede leveranciers en architecten en is up-to-date met bemonstering van de beste en nieuwste materialen.
+                Samen bieden we maatwerk interieurglas en spiegels, kussenstoffering, interieurstaal, natuursteen, composiet en spuitwerk.
+              </p>
+              <p className="text-gray-300">
+                We selecteren onze materialen zorgvuldig op basis van kwaliteit, duurzaamheid en esthetiek. Onze relaties met 
+                leveranciers stellen ons in staat om toegang te hebben tot de nieuwste en meest hoogwaardige materialen in de industrie, 
+                zodat we voor elk project de perfecte oplossing kunnen bieden.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Work Process Section */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="mb-20"
+          >
+            <h2 className="text-3xl font-bold mb-12 text-center">
+              Ons <span className="text-orange">Werkproces</span>
             </h2>
             
             <div className="relative">
@@ -174,29 +188,24 @@ const AboutPage = () => {
               {/* Timeline items */}
               {[
                 {
-                  year: "2010",
-                  title: "Oprichting Studio Design",
-                  description: "Emma de Vries start Studio Design met een team van drie ontwerpers."
+                  title: "Eerste Gesprek",
+                  description: "We beginnen met een gesprek om uw wensen, behoeften en visie te begrijpen."
                 },
                 {
-                  year: "2013",
-                  title: "Eerste Grote Opdracht",
-                  description: "Renovatie van een historisch pand in het centrum van Amsterdam."
+                  title: "Conceptontwikkeling",
+                  description: "We ontwikkelen een concept dat aansluit bij uw wensen en budget."
                 },
                 {
-                  year: "2016",
-                  title: "Uitbreiding Team & Diensten",
-                  description: "Groei naar een team van 10 professionals en toevoeging van eigen meubelproductie."
+                  title: "Gedetailleerd Ontwerp",
+                  description: "We werken het concept uit tot een gedetailleerd ontwerp met materiaalkeuzes."
                 },
                 {
-                  year: "2019",
-                  title: "Internationale Erkenning",
-                  description: "Eerste internationale design award voor een hotelier project in Berlijn."
+                  title: "Planning & Productie",
+                  description: "We plannen het project zorgvuldig en beginnen met de productie van maatwerkelementen."
                 },
                 {
-                  year: "2022",
-                  title: "Huidige Dag",
-                  description: "Een gevestigde naam in de wereld van interieurontwerp met meer dan 150 succesvolle projecten."
+                  title: "Realisatie",
+                  description: "Met precisie en vakmanschap realiseren we het ontwerp in uw ruimte."
                 }
               ].map((item, index) => (
                 <div key={index} className="relative mb-16">
@@ -213,9 +222,6 @@ const AboutPage = () => {
                         transition={{ duration: 0.5 }}
                         className={`bg-dark-lighter p-6 rounded-lg ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'}`}
                       >
-                        <span className="inline-block px-3 py-1 rounded text-sm font-semibold bg-orange text-white mb-2">
-                          {item.year}
-                        </span>
                         <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                         <p className="text-gray-300">{item.description}</p>
                       </motion.div>

@@ -8,10 +8,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-semibold text-white mb-4">
-              STUDIO<span className="text-orange">DESIGN</span>
+              <span className="text-orange">KEMPAS</span>
             </h3>
             <p className="text-gray-300 mb-4 max-w-xs">
-              Wij creëren unieke, moderne interieurs die perfect bij jouw wensen en levensstijl passen.
+              Kempas interieur, montage en betimmering verzorgt grote en kleine projecten voor woningen en bedrijven.
             </p>
             <div className="flex space-x-4">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange">
@@ -60,6 +60,7 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-medium mb-4">Contact</h4>
             <address className="not-italic text-gray-300 space-y-2">
+              <p>Kempas Interieur</p>
               <p>Designstraat 123</p>
               <p>1234 AB Amsterdam</p>
               <p>Nederland</p>
@@ -67,7 +68,7 @@ const Footer = () => {
                 <a href="tel:+31201234567" className="text-orange hover:underline">+31 20 123 4567</a>
               </p>
               <p>
-                <a href="mailto:info@studiodesign.nl" className="text-orange hover:underline">info@studiodesign.nl</a>
+                <a href="mailto:info@kempas.nl" className="text-orange hover:underline">info@kempas.nl</a>
               </p>
             </address>
           </div>
@@ -75,7 +76,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Studio Design. Alle rechten voorbehouden.
+            © {new Date().getFullYear()} Kempas Interieur. Alle rechten voorbehouden.
           </p>
           <div className="mt-4 md:mt-0">
             <ul className="flex space-x-4 text-sm text-gray-400">

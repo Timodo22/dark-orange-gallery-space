@@ -29,10 +29,10 @@ const Home = () => {
             className="max-w-3xl"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Transformeer Uw Ruimte Met <span className="text-orange">Vakmanschap</span> en <span className="text-orange">Visie</span>
+              <span className="text-orange">Kempas</span> Interieur, Montage en Betimmering
             </h1>
             <p className="text-xl text-gray-300 mb-8">
-              Wij creëren unieke interieurs die functionaliteit, stijl en karakter perfect combineren.
+              Planmatig, gestructureerd en altijd met oog voor detail: Kempas werkt graag voor de bovengemiddeld kritische opdrachtgever.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button size="lg" className="bg-orange hover:bg-orange-dark text-white">
@@ -57,17 +57,18 @@ const Home = () => {
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                <span className="text-orange">Vakmanschap</span> Met Passie Voor Design
+                <span className="text-orange">Kwaliteit</span> en Precisie Sinds 2005
               </h2>
               <p className="text-gray-300 mb-6">
-                Studio Design is een toonaangevend interieur ontwerpbureau met meer dan 15 jaar ervaring. 
-                Onze passie ligt bij het creëren van ruimtes die niet alleen mooi zijn, maar ook perfect 
-                functioneren voor de mensen die erin leven en werken.
+                Kempas interieur, montage en betimmering verzorgt grote en kleine projecten voor woningen en bedrijven. 
+                Wij werken planmatig, gestructureerd en altijd met oog voor detail.
               </p>
               <p className="text-gray-300 mb-6">
-                Van concept tot realisatie, wij begeleiden u door het hele proces. Ons team van ervaren 
-                ontwerpers en vakmensen zorgt voor een vlekkeloze uitvoering en een eindresultaat dat 
-                uw verwachtingen overtreft.
+                "Quality means doing it right when no one is looking." – Henry Ford
+              </p>
+              <p className="text-gray-300 mb-6">
+                Of het nu gaat om een volledig interieurproject voor uw woning, een renovatie van uw kantoor, of 
+                maatwerk voor uw horecagelegenheid - wij staan klaar om uw visie werkelijkheid te maken met vakmanschap en precisie.
               </p>
               <Button className="bg-orange hover:bg-orange-dark text-white mt-4">
                 <Link to="/over-ons">Lees Meer Over Ons</Link>
@@ -88,7 +89,7 @@ const Home = () => {
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-orange rounded-lg flex items-center justify-center p-6 text-center">
-                <span className="text-white font-semibold">Meer dan 150+ Succesvolle Projecten</span>
+                <span className="text-white font-semibold">Meer dan 15+ jaar ervaring</span>
               </div>
             </motion.div>
           </div>
@@ -192,6 +193,63 @@ const Home = () => {
                 <p className="text-gray-400">{service.description}</p>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Partnership Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <span className="text-orange">Partnerschap</span> & Materialen
+            </h2>
+            <p className="text-gray-300 max-w-2xl mx-auto">
+              Samenwerken voor het beste resultaat
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="bg-dark-lighter p-8 rounded-lg"
+            >
+              <h3 className="text-2xl font-semibold mb-4">Partnerschap</h3>
+              <p className="text-gray-300 mb-4">
+                Wanneer een project of een opdrachtgever erom vraagt, werkt Kempas graag samen met partners en (interieur)architecten. 
+                In de loop der jaren is er een sterk netwerk opgebouwd met mensen die hun vak uitstekend verstaan.
+              </p>
+              <p className="text-gray-300">
+                Door onze sterke samenwerkingsverbanden kunnen wij u een compleet pakket aan diensten aanbieden, 
+                waarbij kwaliteit en vakmanschap altijd voorop staan.
+              </p>
+            </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="bg-dark-lighter p-8 rounded-lg"
+            >
+              <h3 className="text-2xl font-semibold mb-4">Materialen en Leveranciers</h3>
+              <p className="text-gray-300 mb-4">
+                Kempas werkt nauw samen met goede leveranciers en architecten en is up-to-date met bemonstering van de beste en nieuwste materialen.
+              </p>
+              <p className="text-gray-300">
+                Samen bieden we maatwerk interieur zoals glas en spiegels, kussenstoffering, interieurstaal, natuursteen, composiet en spuitwerk.
+                Hierdoor kunnen we voor elk project de perfecte materialen selecteren die passen bij uw wensen en budget.
+              </p>
+            </motion.div>
           </div>
         </div>
       </section>
