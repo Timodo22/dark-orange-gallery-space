@@ -1,7 +1,6 @@
 {
   "name": "vite_react_shadcn_ts",
   "homepage": "https://Timodo22.github.io/dark-orange-gallery-space/",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
