@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+waddup wigga, waarom kijk je hier? path travel? login page? is er niet xx groetjes spectux

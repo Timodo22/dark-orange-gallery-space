@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import logo from '../../img/logo.png'; // pas dit pad aan afhankelijk van waar je Navbar.tsx zit
+
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,7 +28,11 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <span className="text-2xl font-bold text-orange">KEMPAS</span>
+              <img
+    src={logo} // Vervang dit pad door het juiste pad naar je logo
+    alt="KEMPAS Logo"
+    className="h-16 w-auto" // Pas grootte aan naar wens
+  />
           </Link>
 
           {/* Desktop navigation */}
